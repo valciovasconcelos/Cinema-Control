@@ -21,9 +21,9 @@ body {
 
 /* Títulos das páginas */
 h2 {
-    color: #1a1a2e;
+    color: #333333;
     font-weight: 700;
-    border-bottom: 3px solid #e94560;
+    border-bottom: 3px solid #000000;
     padding-bottom: 10px;
     display: inline-block;
 }
@@ -35,7 +35,7 @@ h2 {
 }
 
 .card-header {
-    background-color: #1a1a2e !important;
+    background-color: #000000 !important;
     color: white !important;
     font-weight: 600;
 }
@@ -53,7 +53,7 @@ h2 {
 
 /* Tabelas */
 .table thead {
-    background-color: #1a1a2e;
+    background-color: #000000;
     color: white;
 }
 
