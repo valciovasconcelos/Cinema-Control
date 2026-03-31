@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Filmes - CINEFLEX</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR Responsivo -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.png" alt="CINEFLEX Logo" height="30" class="d-inline-block align-text-top me-2">
+                CINEFLEX
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./cadastro-filmes.html">Filmes</a></li>
+                <li class="nav-item"><a class="nav-link" href="./cadastro-salas.html">Salas</a></li>
+                <li class="nav-item"><a class="nav-link" href="./cadastro-sessoes.html">Sessões</a></li>
+                <li class="nav-item"><a class="nav-link" href="./venda-ingressos.html">Ingressos</a></li>
+                <li class="nav-item"><a class="nav-link" href="./sessoes.html">Sessões Disponíveis</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>Cadastro de Filmes</h2>
+
+        <div class="card mt-3">
+            <div class="card-header">Novo Filme</div>
+            <div class="card-body">
+                <form id="formFilme">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="titulo" class="form-label">Título</label>
+                            <input type="text" class="form-control" id="titulo" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="genero" class="form-label">Gênero</label>
+                            <input type="text" class="form-control" id="genero" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="descricao" class="form-label">Descrição</label>
+                        <textarea class="form-control" id="descricao" rows="3" required></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="classificacao" class="form-label">Classificação Indicativa</label>
+                            <select class="form-select" id="classificacao" required>
+                                <option value="">Selecione...</option>
+                                <option value="Livre">Livre</option>
+                                <option value="10">10 anos</option>
+                                <option value="12">12 anos</option>
+                                <option value="14">14 anos</option>
+                                <option value="16">16 anos</option>
+                                <option value="18">18 anos</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="duracao" class="form-label">Duração (minutos)</label>
+                            <input type="number" class="form-control" id="duracao" min="1" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="dataEstreia" class="form-label">Data de Estreia</label>
+                            <input type="date" class="form-control" id="dataEstreia" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Salvar Filme</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">Filmes Cadastrados</div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Título</th>
+                                <th>Gênero</th>
+                                <th>Classificação</th>
+                                <th>Duração</th>
+                                <th>Estreia</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabelaFilmes">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/filmes.js"></script>
+</body>
+</html>

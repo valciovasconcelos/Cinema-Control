@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINEFLEX - Sistema de Cinema</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR Responsivo -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.png" alt="CINEFLEX Logo" height="30" class="d-inline-block align-text-top me-2">
+                CINEFLEX
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="./index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./cadastro-filmes.html">Filmes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./cadastro-salas.html">Salas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./cadastro-sessoes.html">Sessões</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./venda-ingressos.html">Ingressos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./sessoes.html">Sessões Disponíveis</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="text-center mb-4">
+            <h2>Bem-vindo ao CINEFLEX</h2>
+            <p class="text-muted">Sistema de Controle de Cinema</p>
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <img src="./img/cadastro-filmes.png" alt="Filmes" width="60" class="mb-3">
+                        <h5 class="card-title">Cadastro de Filmes</h5>
+                        <p class="card-text">Cadastre novos filmes com título, gênero, descrição e classificação.</p>
+                        <a href="./cadastro-filmes.html" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <img src="./img/cadastro-salas.png" alt="Salas" width="60" class="mb-3">
+                        <h5 class="card-title">Cadastro de Salas</h5>
+                        <p class="card-text">Gerencie as salas do cinema com capacidade e tipo.</p>
+                        <a href="./cadastro-salas.html" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <img src="./img/cadastro-sessoes.png" alt="Sessões" width="60" class="mb-3">
+                        <h5 class="card-title">Cadastro de Sessões</h5>
+                        <p class="card-text">Crie sessões vinculando filmes, salas, horários e preços.</p>
+                        <a href="./cadastro-sessoes.html" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <img src="./img/venda-ingressos.png" alt="Ingressos" width="60" class="mb-3">
+                        <h5 class="card-title">Venda de Ingressos</h5>
+                        <p class="card-text">Registre vendas com dados do cliente, assento e pagamento.</p>
+                        <a href="./venda-ingressos.html" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <img src="./img/sessoes-disponiveis.png" alt="Sessões Disponíveis" width="60" class="mb-3">
+                        <h5 class="card-title">Sessões Disponíveis</h5>
+                        <p class="card-text">Veja todas as sessões e compre ingressos diretamente.</p>
+                        <a href="./sessoes.html" class="btn btn-primary">Acessar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+</body>
+</html>

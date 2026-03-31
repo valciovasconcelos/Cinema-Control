@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Salas - CINEFLEX</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- NAVBAR Responsivo -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+                <img src="./img/logo.png" alt="CINEFLEX Logo" height="30" class="d-inline-block align-text-top me-2">
+                CINEFLEX
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link" href="./index.html">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="./cadastro-filmes.html">Filmes</a></li>
+                <li class="nav-item"><a class="nav-link active" href="./cadastro-salas.html">Salas</a></li>
+                <li class="nav-item"><a class="nav-link" href="./cadastro-sessoes.html">Sessões</a></li>
+                <li class="nav-item"><a class="nav-link" href="./venda-ingressos.html">Ingressos</a></li>
+                <li class="nav-item"><a class="nav-link" href="./sessoes.html">Sessões Disponíveis</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2>Cadastro de Salas</h2>
+
+        <div class="card mt-3">
+            <div class="card-header">Nova Sala</div>
+            <div class="card-body">
+                <form id="formSala">
+                    <div class="row">
+                        <div class="col-md-4 mb-3">
+                            <label for="nomeSala" class="form-label">Nome da Sala</label>
+                            <input type="text" class="form-control" id="nomeSala" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="capacidade" class="form-label">Capacidade</label>
+                            <input type="number" class="form-control" id="capacidade" min="1" required>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <label for="tipo" class="form-label">Tipo</label>
+                            <select class="form-select" id="tipo" required>
+                                <option value="">Selecione...</option>
+                                <option value="2D">2D</option>
+                                <option value="3D">3D</option>
+                                <option value="IMAX">IMAX</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Salvar Sala</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-4">
+            <div class="card-header">Salas Cadastradas</div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Capacidade</th>
+                                <th>Tipo</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabelaSalas">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/salas.js"></script>
+</body>
+</html>
